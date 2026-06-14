@@ -55,7 +55,7 @@
           <h2 class="companies-title">Companies I've Hacked</h2>
           <div class="companies-logos">
             {{- range $companies }}
-            <img class="company-logo" src="{{ printf "/images/companies/%s" .file | relURL }}" alt="{{ .name }}" loading="lazy">
+            <img class="company-logo" src="{{ printf "images/companies/%s" .file | absURL }}" alt="{{ .name }}" loading="lazy">
             {{- end }}
           </div>
         </section>
