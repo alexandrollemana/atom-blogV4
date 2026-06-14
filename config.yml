@@ -32,7 +32,7 @@ server:
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
   title: Atom Blog 
-  description: "Blog of a Cybersecurity Enthusiast & Biohacker"
+  description: "Blog of a Full-time Bug Bounty Hunter on Google"
   keywords: [Blog, Portfolio, Hacker, Cybersecurity, BSCP, Port Swigger]
   author: Atom 
   # author: ["Me", "You"] # multiple authors
