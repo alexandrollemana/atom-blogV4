@@ -83,21 +83,24 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 1.4rem 2.2rem;
+  gap: 1rem 1.6rem;
 }
-.company-logo {
-  height: 34px;
-  width: auto;
-  max-width: 130px;
+/* Override PaperMod's .profile img { border-radius: 50% } */
+.profile_inner .company-logo {
+  display: inline-block;
+  width: 130px;
+  height: 40px;
+  object-fit: contain;
+  border-radius: 0;
   opacity: 0.7;
   /* Default = white (this site's primary theme is dark). */
   filter: brightness(0) invert(1);
   transition: opacity 0.18s ease, transform 0.18s ease;
 }
-body:not(.dark) .company-logo { filter: brightness(0); }
-.company-logo:hover { opacity: 1; transform: translateY(-1px); }
+body:not(.dark) .profile_inner .company-logo { filter: brightness(0); }
+.profile_inner .company-logo:hover { opacity: 1; transform: translateY(-1px); }
 @media (max-width: 600px) {
-  .companies-logos { gap: 1rem 1.4rem; }
-  .company-logo { height: 24px; max-width: 100px; }
+  .companies-logos { gap: 0.7rem 1rem; }
+  .profile_inner .company-logo { width: 95px; height: 32px; }
 }
 </style>
