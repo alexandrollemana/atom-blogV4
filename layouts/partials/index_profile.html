@@ -66,36 +66,38 @@
 <style>
 .companies-strip {
   margin: 2.5rem auto 0;
-  max-width: 720px;
+  max-width: 760px;
   padding: 0 1rem;
   text-align: center;
 }
 .companies-title {
-  font-size: 0.72rem;
-  font-weight: 500;
+  font-size: 0.95rem;
+  font-weight: 600;
   letter-spacing: 0.22em;
   text-transform: uppercase;
-  opacity: 0.5;
-  margin: 0 0 1.25rem;
+  opacity: 0.6;
+  margin: 0 0 1.5rem;
 }
 .companies-logos {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 1.2rem 2rem;
+  gap: 1.4rem 2.2rem;
 }
 .company-logo {
-  height: 26px;
+  height: 34px;
   width: auto;
-  opacity: 0.55;
-  filter: brightness(0);
+  max-width: 130px;
+  opacity: 0.7;
+  /* Default = white (this site's primary theme is dark). */
+  filter: brightness(0) invert(1);
   transition: opacity 0.18s ease, transform 0.18s ease;
 }
-body.dark .company-logo { filter: brightness(0) invert(1); }
+body:not(.dark) .company-logo { filter: brightness(0); }
 .company-logo:hover { opacity: 1; transform: translateY(-1px); }
 @media (max-width: 600px) {
   .companies-logos { gap: 1rem 1.4rem; }
-  .company-logo { height: 20px; }
+  .company-logo { height: 24px; max-width: 100px; }
 }
 </style>
