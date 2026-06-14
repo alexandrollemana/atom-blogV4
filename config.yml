@@ -92,9 +92,9 @@ params:
     url: "https://x.com/Atom_User_"
   - name: linkedin
     url: "https://www.linkedin.com/in/atom1"
-  - name: github
-    url: "https://github.com/Atom-U" 
-  
+  # - name: github
+  #   url: "https://github.com/Atom-U"
+
 
   analytics:
     google:

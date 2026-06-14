@@ -1,5 +1,5 @@
 ---
-title: "About me ☕"
+title: "Full time Bug Bounty Hunter on Google"
 slug: about
 category:
 summary:
@@ -13,11 +13,12 @@ showtoc: false
 draft: false
 ---
 
-🛡️ Cybersecurity Enthusiast | 📜 BSCP Certified | 🧬 Biohacker
--------
+**I find security flaws affecting billions of people before the wrong people do.**
 
+My main target is **Google**. I specialize in **Android**, the "little" codebase running on more than **3 billion devices** worldwide.
 
-I’m **Atom**, driven by a relentless pursuit of **self-improvement** and the belief that there are **no limits** to what we can achieve
-You’ll often find me participating in various **cyber events**, so if you’re into cybersecurity, feel free to connect and see what I'm up to! 🚀
+Before turning 21, I'd already reported high-severity vulnerabilities to some of the most heavily targeted companies on the planet: **Google, Anthropic, AWS, and Atlassian**.
 
-**"Stay hard."**
+I didn't take the standard path. I left school, my job, and my country at 19 to go all-in on my passion — bug bounty.
+
+On this account, I share my thoughts, findings, and the reality of bug bounty.
