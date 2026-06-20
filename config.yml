@@ -86,8 +86,8 @@ params:
   socialIcons:
   - name: discord
     url: "https://discord.com/users/user19216820011"
-  - name: twitter
-    url: "https://x.com/Atom_User_"
+  # - name: twitter
+  #   url: "https://x.com/Atom_User_"
   - name: linkedin
     url: "https://www.linkedin.com/in/atom1"
   # - name: github
