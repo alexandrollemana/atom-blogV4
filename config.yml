@@ -131,9 +131,9 @@ menu:
       name: About
       url: /about/
       weight: 4
-    - identifier: BSCP Blog 
-      name: Blog BSCP
-      url: blogs/de-zéro-à-la-bscp-mon-parcours-et-mes-astuces/
+    - identifier: blogs
+      name: Blogs
+      url: /blogs/
       weight: 1
     #- identifier: tags
     #  name: tags

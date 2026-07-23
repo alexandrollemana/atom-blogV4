@@ -2,45 +2,40 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Atom</title>
-    <link>//localhost:1313/</link>
+    <link>//at0m.space/</link>
     <description>Recent content on Atom</description>
     <image>
-      <url>//localhost:1313/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>//localhost:1313/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>//at0m.space/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>//at0m.space/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 15 Sep 2020 11:30:03 +0000</lastBuildDate><atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 23 Jul 2026 10:00:00 +0200</lastBuildDate><atom:link href="//at0m.space/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How I Gamified My Life as a Full-Time Bug Bounty Hunter</title>
+      <link>//at0m.space/blogs/a-reward-adds-never-gates/</link>
+      <pubDate>Thu, 23 Jul 2026 10:00:00 +0200</pubDate>
+      
+      <guid>//at0m.space/blogs/a-reward-adds-never-gates/</guid>
+      <description>Most gamification is useless. So I built my own: a dashboard with lootboxes, currencies and focus sessions that pays me back in the hobbies full-time hunting quietly took away.</description>
+    </item>
+    
     <item>
       <title>My 1st post</title>
-      <link>//localhost:1313/page/</link>
+      <link>//at0m.space/page/</link>
       <pubDate>Tue, 15 Sep 2020 11:30:03 +0000</pubDate>
       
-      <guid>//localhost:1313/page/</guid>
+      <guid>//at0m.space/page/</guid>
       <description>Desc Text.</description>
     </item>
     
     <item>
-      <title>About me ☕</title>
-      <link>//localhost:1313/about/</link>
+      <title>De zero a la BSCP : Mon parcours et Mes astuces ⚡</title>
+      <link>//at0m.space/blogs/de-z%C3%A9ro-%C3%A0-la-bscp-mon-parcours-et-mes-astuces/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/about/</guid>
-      <description>&lt;h2 id=&#34;-cybersecurity-enthusiast---bscp-certified---biohacker&#34;&gt;🛡️ Cybersecurity Enthusiast | 📜 BSCP Certified | 🧬 Biohacker&lt;/h2&gt;
-&lt;p&gt;I’m &lt;strong&gt;Atom&lt;/strong&gt;, driven by a relentless pursuit of &lt;strong&gt;self-improvement&lt;/strong&gt; and the belief that there are &lt;strong&gt;no limits&lt;/strong&gt; to what we can achieve. 💪&lt;/p&gt;
-&lt;p&gt;I’m also a student at &lt;em&gt;ESNA&lt;/em&gt; with a deep passion for &lt;strong&gt;cybersecurity&lt;/strong&gt;. 🔐&lt;br&gt;
-I&amp;rsquo;m part of the association &lt;em&gt;Astre&lt;/em&gt; &lt;a href=&#34;https://x.com/astrebzh&#34;&gt;@astrebzh&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;My &lt;strong&gt;vision&lt;/strong&gt; is clear -&amp;gt; become the &lt;strong&gt;best version&lt;/strong&gt; of myself and &lt;strong&gt;inspire others&lt;/strong&gt; to do the same.&lt;br&gt;
-You’ll often find me participating in various &lt;strong&gt;cyber events&lt;/strong&gt;, so if you’re into cybersecurity, feel free to connect and see what I&amp;rsquo;m up to! 🚀&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>De zéro à la BSCP : Mon parcours et Mes astuces ⚡</title>
-      <link>//localhost:1313/blogs/de-z%C3%A9ro-%C3%A0-la-bscp-mon-parcours-et-mes-astuces/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>//localhost:1313/blogs/de-z%C3%A9ro-%C3%A0-la-bscp-mon-parcours-et-mes-astuces/</guid>
-      <description>&lt;img src=&#34;//localhost:1313/images/bscp.svg&#34; style=&#34;margin-left:30%;border:solid;border-color:#885FFF;&#34;&gt;
+      <guid>//at0m.space/blogs/de-z%C3%A9ro-%C3%A0-la-bscp-mon-parcours-et-mes-astuces/</guid>
+      <description>&lt;img src=&#34;//at0m.space/images/bscp.svg&#34; style=&#34;margin-left:30%;border:solid;border-color:#885FFF;&#34;&gt;
 &lt;hr&gt;
 &lt;h1 id=&#34;introduction-&#34;&gt;Introduction :&lt;/h1&gt;
 &lt;p&gt;Je suis parti de rien, et après plusieurs mois de travail, j&amp;rsquo;ai décroché la certification &lt;strong&gt;Burp Suite Certified Practitioner&lt;/strong&gt;.&lt;/p&gt;
@@ -49,6 +44,18 @@ You’ll often find me participating in various &lt;strong&gt;cyber events&lt;/s
 &lt;hr&gt;
 &lt;h3 id=&#34;live-avec-lalukahttpsxcomthelaluka&#34;&gt;Live avec &lt;a href=&#34;https://x.com/TheLaluka&#34;&gt;Laluka&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;Plus d&amp;rsquo;info sur la BSCP et Tips sur le Lifetsyle&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Full time Bug Bounty Hunter on Google</title>
+      <link>//at0m.space/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//at0m.space/about/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;I find security flaws affecting billions of people before the wrong people do.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;My main target is &lt;strong&gt;Google&lt;/strong&gt;. I specialize in &lt;strong&gt;Android&lt;/strong&gt;, the &amp;ldquo;little&amp;rdquo; codebase running on more than &lt;strong&gt;3 billion devices&lt;/strong&gt; worldwide.&lt;/p&gt;
+&lt;p&gt;Before turning 21, I&amp;rsquo;d already reported high-severity vulnerabilities to some of the most heavily targeted companies on the planet: &lt;strong&gt;Google, Anthropic, AWS, and Atlassian&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;I didn&amp;rsquo;t take the standard path. I left school, my job, and my country at 19 to go all-in on my passion, bug bounty.&lt;/p&gt;</description>
     </item>
     
   </channel>

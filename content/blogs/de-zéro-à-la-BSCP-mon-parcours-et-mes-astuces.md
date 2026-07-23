@@ -1,5 +1,5 @@
 ---
-title: "De zéro à la BSCP : Mon parcours et Mes astuces ⚡"
+title: "De zero a la BSCP : Mon parcours et Mes astuces ⚡"
 # date: 2022-04-08T23:15:00+07:00
 slug: De zéro à la BSCP -> mon parcours et mes astuces ⚡ 
 category: blog 

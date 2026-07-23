@@ -2,34 +2,39 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Blogs on Atom</title>
-    <link>//localhost:1313/blogs/</link>
+    <link>//at0m.space/blogs/</link>
     <description>Recent content in Blogs on Atom</description>
     <image>
-      <url>//localhost:1313/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>//localhost:1313/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>//at0m.space/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>//at0m.space/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="//localhost:1313/blogs/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <lastBuildDate>Thu, 23 Jul 2026 10:00:00 +0200</lastBuildDate><atom:link href="//at0m.space/blogs/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>De zéro à la BSCP : Mon parcours et Mes astuces ⚡</title>
-      <link>//localhost:1313/blogs/de-z%C3%A9ro-%C3%A0-la-bscp-mon-parcours-et-mes-astuces/</link>
+      <title>How I Gamified My Life as a Full-Time Bug Bounty Hunter</title>
+      <link>//at0m.space/blogs/a-reward-adds-never-gates/</link>
+      <pubDate>Thu, 23 Jul 2026 10:00:00 +0200</pubDate>
+      
+      <guid>//at0m.space/blogs/a-reward-adds-never-gates/</guid>
+      <description>Most gamification is useless. So I built my own: a dashboard with lootboxes, currencies and focus sessions that pays me back in the hobbies full-time hunting quietly took away.</description>
+    </item>
+    
+    <item>
+      <title>De zero a la BSCP : Mon parcours et Mes astuces ⚡</title>
+      <link>//at0m.space/blogs/de-z%C3%A9ro-%C3%A0-la-bscp-mon-parcours-et-mes-astuces/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/blogs/de-z%C3%A9ro-%C3%A0-la-bscp-mon-parcours-et-mes-astuces/</guid>
-      <description>&lt;img src=&#34;//localhost:1313/images/bscp.svg&#34; style=&#34;margin-left:30%;border:solid;border-color:#885FFF;&#34;&gt;
+      <guid>//at0m.space/blogs/de-z%C3%A9ro-%C3%A0-la-bscp-mon-parcours-et-mes-astuces/</guid>
+      <description>&lt;img src=&#34;//at0m.space/images/bscp.svg&#34; style=&#34;margin-left:30%;border:solid;border-color:#885FFF;&#34;&gt;
 &lt;hr&gt;
 &lt;h1 id=&#34;introduction-&#34;&gt;Introduction :&lt;/h1&gt;
 &lt;p&gt;Je suis parti de rien, et après plusieurs mois de travail, j&amp;rsquo;ai décroché la certification &lt;strong&gt;Burp Suite Certified Practitioner&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;Dans cet article, je partage les stratégies, astuces, et erreurs à éviter pour que toi aussi, tu puisses obtenir cette certification, même si tu pars de zéro !&lt;/p&gt;
 &lt;p&gt;Mon objectif est de te fournir une stratégie claire avec des étapes précises pour t&amp;rsquo;aider à passer l&amp;rsquo;examen efficacement.&lt;/p&gt;
 &lt;hr&gt;
-&lt;h2 id=&#34;-tu-es-intéressé-par-la-bscp-mais-tu-ne-sais-pas-par-où-commencer--clique-iciblogsde-zéro-à-la-bscp-mon-parcours-et-mes-astuceskesako-la-bscp-&#34;&gt;📌 Tu es intéressé par la BSCP mais tu ne sais pas par où commencer ? &lt;a href=&#34;//localhost:1313/blogs/de-z%C3%A9ro-%C3%A0-la-bscp-mon-parcours-et-mes-astuces/#kesako-la-bscp-&#34;&gt;Clique ici&lt;/a&gt;&lt;/h2&gt;
-&lt;h2 id=&#34;-tu-vas-bientôt-passer-la-bscp--clique-iciblogsde-zéro-à-la-bscp-mon-parcours-et-mes-astucesles-meilleures-ressources-pour-préparer-la-bscp&#34;&gt;📌 Tu vas bientôt passer la BSCP ? &lt;a href=&#34;//localhost:1313/blogs/de-z%C3%A9ro-%C3%A0-la-bscp-mon-parcours-et-mes-astuces/#les-meilleures-ressources-pour-pr%C3%A9parer-la-bscp&#34;&gt;Clique ici&lt;/a&gt;&lt;/h2&gt;
-&lt;h2 id=&#34;-visiteur-de-lombre-juste-curieux--clique-iciblogsde-zéro-à-la-bscp-mon-parcours-et-mes-astuceskesako-la-bscp-&#34;&gt;📌 Visiteur de l&amp;rsquo;ombre, juste curieux ? &lt;a href=&#34;//localhost:1313/blogs/de-z%C3%A9ro-%C3%A0-la-bscp-mon-parcours-et-mes-astuces/#kesako-la-bscp-&#34;&gt;Clique ici&lt;/a&gt;&lt;/h2&gt;
-&lt;hr&gt;
-&lt;hr&gt;
-&lt;h3 id=&#34;kesako-la-bscp-&#34;&gt;Kesako la BSCP ?&lt;/h3&gt;
-&lt;p&gt;La Burp Suite Certified Practitioner (BSCP) est une certification officielle délivrée par les créateurs de Burp Suite.&lt;/p&gt;</description>
+&lt;h3 id=&#34;live-avec-lalukahttpsxcomthelaluka&#34;&gt;Live avec &lt;a href=&#34;https://x.com/TheLaluka&#34;&gt;Laluka&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Plus d&amp;rsquo;info sur la BSCP et Tips sur le Lifetsyle&lt;/p&gt;</description>
     </item>
     
   </channel>
