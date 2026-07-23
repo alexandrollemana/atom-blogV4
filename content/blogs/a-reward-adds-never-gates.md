@@ -30,7 +30,7 @@ So I built a system for it.
 
 ## Most gamification does not work
 
-Let's be honest, most gamification is useless.
+Let's be honest, most gamification systems are useless.
 Points that mean nothing. Badges nobody cares about. Streaks you drop after a week.
 
 So I went looking for the ones that actually work.
