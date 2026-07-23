@@ -2,40 +2,40 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Atom</title>
-    <link>//at0m.space/</link>
+    <link>//localhost:1313/</link>
     <description>Recent content on Atom</description>
     <image>
-      <url>//at0m.space/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>//at0m.space/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>//localhost:1313/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>//localhost:1313/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 23 Jul 2026 10:00:00 +0200</lastBuildDate><atom:link href="//at0m.space/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 23 Jul 2026 10:00:00 +0200</lastBuildDate><atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How I Gamified My Life as a Full-Time Bug Bounty Hunter</title>
-      <link>//at0m.space/blogs/a-reward-adds-never-gates/</link>
+      <link>//localhost:1313/blogs/a-reward-adds-never-gates/</link>
       <pubDate>Thu, 23 Jul 2026 10:00:00 +0200</pubDate>
       
-      <guid>//at0m.space/blogs/a-reward-adds-never-gates/</guid>
+      <guid>//localhost:1313/blogs/a-reward-adds-never-gates/</guid>
       <description>Most gamification is useless. So I built my own: a dashboard with lootboxes, currencies and focus sessions that pays me back in the hobbies full-time hunting quietly took away.</description>
     </item>
     
     <item>
       <title>My 1st post</title>
-      <link>//at0m.space/page/</link>
+      <link>//localhost:1313/page/</link>
       <pubDate>Tue, 15 Sep 2020 11:30:03 +0000</pubDate>
       
-      <guid>//at0m.space/page/</guid>
+      <guid>//localhost:1313/page/</guid>
       <description>Desc Text.</description>
     </item>
     
     <item>
       <title>De zero a la BSCP : Mon parcours et Mes astuces ⚡</title>
-      <link>//at0m.space/blogs/de-z%C3%A9ro-%C3%A0-la-bscp-mon-parcours-et-mes-astuces/</link>
+      <link>//localhost:1313/blogs/de-z%C3%A9ro-%C3%A0-la-bscp-mon-parcours-et-mes-astuces/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//at0m.space/blogs/de-z%C3%A9ro-%C3%A0-la-bscp-mon-parcours-et-mes-astuces/</guid>
-      <description>&lt;img src=&#34;//at0m.space/images/bscp.svg&#34; style=&#34;margin-left:30%;border:solid;border-color:#885FFF;&#34;&gt;
+      <guid>//localhost:1313/blogs/de-z%C3%A9ro-%C3%A0-la-bscp-mon-parcours-et-mes-astuces/</guid>
+      <description>&lt;img src=&#34;//localhost:1313/images/bscp.svg&#34; style=&#34;margin-left:30%;border:solid;border-color:#885FFF;&#34;&gt;
 &lt;hr&gt;
 &lt;h1 id=&#34;introduction-&#34;&gt;Introduction :&lt;/h1&gt;
 &lt;p&gt;Je suis parti de rien, et après plusieurs mois de travail, j&amp;rsquo;ai décroché la certification &lt;strong&gt;Burp Suite Certified Practitioner&lt;/strong&gt;.&lt;/p&gt;
@@ -48,10 +48,10 @@
     
     <item>
       <title>Full time Bug Bounty Hunter on Google</title>
-      <link>//at0m.space/about/</link>
+      <link>//localhost:1313/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//at0m.space/about/</guid>
+      <guid>//localhost:1313/about/</guid>
       <description>&lt;p&gt;&lt;strong&gt;I find security flaws affecting billions of people before the wrong people do.&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;My main target is &lt;strong&gt;Google&lt;/strong&gt;. I specialize in &lt;strong&gt;Android&lt;/strong&gt;, the &amp;ldquo;little&amp;rdquo; codebase running on more than &lt;strong&gt;3 billion devices&lt;/strong&gt; worldwide.&lt;/p&gt;
 &lt;p&gt;Before turning 21, I&amp;rsquo;d already reported high-severity vulnerabilities to some of the most heavily targeted companies on the planet: &lt;strong&gt;Google, Anthropic, AWS, and Atlassian&lt;/strong&gt;.&lt;/p&gt;

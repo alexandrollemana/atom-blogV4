@@ -54,7 +54,7 @@ That's the whole idea. Not motivation. Meritocrac
 First thing I see: my objectives for the day, planned the evening before.
 Then I open my daily booster.
 
-<video autoplay loop muted playsinline style="border:solid;border-color:#885FFF;width:100%;">
+<video autoplay loop muted playsinline controls style="border:solid;border-color:#885FFF;width:100%;">
   <source src="/images/reward-system/booster-opening.mp4" type="video/mp4">
 </video>
 
@@ -118,7 +118,7 @@ But the brain does not care, and that is exactly the point
 
 At 7000 Valis, I can buy the Mega Lootbox. It spins like a CSGO case.
 
-<video autoplay loop muted playsinline style="border:solid;border-color:#885FFF;width:100%;">
+<video autoplay loop muted playsinline controls style="border:solid;border-color:#885FFF;width:100%;">
   <source src="/images/reward-system/lootbox-spin.mp4" type="video/mp4">
 </video>
 
