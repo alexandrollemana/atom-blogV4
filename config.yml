@@ -41,8 +41,8 @@ params:
   defaultTheme: dark # dark, light
   disableThemeToggle: false
 
-  ShowReadingTime: false  
-  ShowShareButtons: true
+  ShowReadingTime: false
+  ShowShareButtons: false
   ShowPostNavLinks: false
   ShowBreadCrumbs: true
   ShowCodeCopyButtons: false
@@ -103,9 +103,9 @@ params:
       SiteVerificationTag: "XYZabc"
 
   cover:
-    hidden: true # hide everywhere but not in structured data
-    hiddenInList: true # hide on list pages and home
-    hiddenInSingle: false # hide on single page
+    hidden: false # show covers (needed for list thumbnails)
+    hiddenInList: false # show cover thumbnail on list pages and home
+    hiddenInSingle: false # show cover on single page
 
 
   editPost:

@@ -15,8 +15,6 @@ hidemeta: true
 draft: false
 ---
 
-<img src="/images/reward-system/dashboard-pic.png" alt="The dashboard, full view" style="border:solid;border-color:#885FFF;">
-
 - - -
 
 Going full time in bug bounty, I slowly stopped doing the things I love.
