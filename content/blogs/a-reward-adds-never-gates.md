@@ -3,8 +3,8 @@ title: "How I Gamified My Life as a Full-Time Bug Bounty Hunter"
 date: 2026-07-23T10:00:00+02:00
 slug: a-reward-adds-never-gates
 category: blog
-summary: "Most gamification are useless, So I built my own a dashboard with lootboxes, currencies and focus sessions that pays me back in the hobbies full-time hunting quietly took away."
-description: "Most gamification is useless. So I built my own: a dashboard with lootboxes, currencies and focus sessions that pays me back in the hobbies full-time hunting quietly took away."
+summary: "Most gamification systems are useless. So I built my own: a dashboard with lootboxes, currencies and focus sessions that pays me back in the hobbies full-time hunting quietly took away."
+description: "Most gamification systems are useless. So I built my own: a dashboard with lootboxes, currencies and focus sessions that pays me back in the hobbies full-time hunting quietly took away."
 cover:
   image: images/reward-system/dashboard-pic.png
   alt: "My reward dashboard, full view"
