@@ -47,8 +47,12 @@
           (dict "name" "Anthropic" "file" "anthropic.png")
           (dict "name" "AWS"       "file" "aws.png")
           (dict "name" "Atlassian" "file" "atlassian.png")
+          (dict "name" "Jira"      "file" "jira.webp")
+          (dict "name" "Loom"      "file" "loom.svg")
           (dict "name" "Atos"      "file" "atos.png")
           (dict "name" "BPCE"      "file" "bpce.png")
+          (dict "name" "Banque Populaire"  "file" "banquepopulaire.png")
+          (dict "name" "Caisse d'Épargne"  "file" "caisseepargne.webp")
           (dict "name" "Cartier"   "file" "cartier.svg")
           (dict "name" "Thales"    "file" "thales.png")
           (dict "name" "Accor"     "file" "accor.png")
@@ -56,8 +60,15 @@
         <section class="companies-strip">
           <h2 class="companies-title">Companies I've Hacked</h2>
           <div class="companies-logos">
-            {{- range $companies }}
-            <img class="company-logo" src="{{ printf "images/companies/%s" .file | absURL }}" alt="{{ .name }}" loading="lazy">
+            {{- range $i, $c := $companies }}
+            {{- $res := resources.Get (printf "images/companies/%s" $c.file) }}
+            {{- $src := "" }}
+            {{- if eq $res.MediaType.SubType "svg" }}
+              {{- $src = printf "data:image/svg+xml;base64,%s" ($res.Content | base64Encode) }}
+            {{- else }}
+              {{- $src = printf "data:image/webp;base64,%s" (($res.Resize "260x webp q90").Content | base64Encode) }}
+            {{- end }}
+            <img class="company-logo" src="{{ $src | safeURL }}" alt="{{ $c.name }}" width="130" height="40" decoding="sync" loading="eager" style="--d:{{ mul $i 0.08 }}s">
             {{- end }}
           </div>
         </section>
@@ -89,26 +100,52 @@
 }
 /* Override PaperMod's .profile img { border-radius: 50% } */
 .profile_inner .company-logo {
+  --s: 1;            /* per-logo size (compensates padding + featured sizing) */
+  --ty: 0;           /* hover lift */
+  --d: 0s;           /* shine wave delay (set inline per logo) */
+  --glow: rgba(255, 255, 255, 0.5);
   display: inline-block;
   width: 130px;
   height: 40px;
   object-fit: contain;
   border-radius: 0;
-  opacity: 0.7;
   /* Default = white (this site's primary theme is dark). */
-  filter: brightness(0) invert(1);
-  transition: opacity 0.18s ease, transform 0.18s ease;
+  --tint: brightness(0) invert(1);
+  transform: scale(var(--s)) translateY(var(--ty));
+  transition: transform 0.18s ease;
+  animation: logoShine 8s ease-in-out var(--d) infinite;
 }
-body:not(.dark) .profile_inner .company-logo { filter: brightness(0); }
-.profile_inner .company-logo:hover { opacity: 1; transform: translateY(-1px); }
-.profile_inner .company-logo[alt="Atos"] { transform: scale(0.62); }
-.profile_inner .company-logo[alt="Atos"]:hover { transform: scale(0.62) translateY(-1px); }
-.profile_inner .company-logo[alt="Google"] { transform: scale(1.5); }
-.profile_inner .company-logo[alt="Google"]:hover { transform: scale(1.5) translateY(-1px); }
-.profile_inner .company-logo[alt="Android"] { transform: scale(1.2); }
-.profile_inner .company-logo[alt="Android"]:hover { transform: scale(1.2) translateY(-1px); }
-.profile_inner .company-logo[alt="Accor"] { transform: scale(1.35); }
-.profile_inner .company-logo[alt="Accor"]:hover { transform: scale(1.35) translateY(-1px); }
+body:not(.dark) .profile_inner .company-logo {
+  --tint: brightness(0);
+  --glow: rgba(0, 0, 0, 0.28);
+}
+.profile_inner .company-logo:hover { --ty: -1px; }
+
+/* Featured (first row) — clearly larger than the rest.
+   Wider box reserves horizontal room so the scaled-up logos don't collide. */
+.profile_inner .company-logo[alt="Google"],
+.profile_inner .company-logo[alt="Android"],
+.profile_inner .company-logo[alt="Anthropic"],
+.profile_inner .company-logo[alt="AWS"] { width: 175px; }
+.profile_inner .company-logo[alt="Google"]           { --s: 2.1; }
+.profile_inner .company-logo[alt="Android"]          { --s: 1.75; }
+.profile_inner .company-logo[alt="Anthropic"]        { --s: 1.55; }
+.profile_inner .company-logo[alt="AWS"]              { --s: 1.55; }
+.profile_inner .company-logo[alt="Banque Populaire"] { --s: 1.15; }
+/* Padding compensation for the rest */
+.profile_inner .company-logo[alt="Accor"]            { --s: 1.35; }
+.profile_inner .company-logo[alt="Atos"]             { --s: 0.62; }
+.profile_inner .company-logo[alt="Loom"]             { --s: 0.85; }
+
+/* Subtle shine sweeping across the row — the page's only animation */
+@keyframes logoShine {
+  0%, 90%, 100% { opacity: 0.68; filter: var(--tint) drop-shadow(0 0 0 transparent); }
+  95%           { opacity: 1;    filter: var(--tint) drop-shadow(0 0 6px var(--glow)); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .profile_inner .company-logo { animation: none; opacity: 0.7; filter: var(--tint); }
+}
+
 @media (max-width: 600px) {
   .companies-logos { gap: 0.7rem 1rem; }
   .profile_inner .company-logo { width: 95px; height: 32px; }
