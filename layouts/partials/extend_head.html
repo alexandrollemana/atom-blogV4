@@ -1,4 +1,65 @@
 {{- /* Head custom content area start */ -}}
 {{- /*     Insert any custom code (web-analytics, resources, etc.) - it will appear in the <head></head> section of every page. */ -}}
-{{- /*     Can be overwritten by partial with the same name in the global layouts. */ -}}
+
+{{- /* Animated "Blog" nav button (the highlighted menu link) + click sound */ -}}
+<style>
+/* Minimalist, matching PaperMod's own active-link underline (currentColor).
+   Just the Blogs link: an underline that draws in on hover, plus a click sound. */
+#menu .nav-cta span {
+  position: relative;
+  transition: opacity 0.2s ease;
+}
+#menu .nav-cta span::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -2px;
+  height: 2px;
+  background: currentColor;
+  transform: scaleX(0);
+  transform-origin: left center;
+  transition: transform 0.25s ease;
+}
+#menu .nav-cta:hover span::after { transform: scaleX(1); }
+#menu .nav-cta:active span { opacity: 0.6; }
+/* On the Blogs page the link is already .active (static underline) — hide the animated one to avoid doubling */
+#menu .nav-cta span.active::after { content: none; }
+@media (prefers-reduced-motion: reduce) {
+  #menu .nav-cta span::after { transition: none; }
+}
+</style>
+<script>
+(function () {
+  var actx;
+  function click() {
+    try {
+      actx = actx || new (window.AudioContext || window.webkitAudioContext)();
+      if (actx.state === "suspended") actx.resume();
+      var t = actx.currentTime;
+      var o = actx.createOscillator(), g = actx.createGain();
+      o.type = "triangle";
+      o.frequency.setValueAtTime(520, t);
+      o.frequency.exponentialRampToValueAtTime(880, t + 0.06);
+      g.gain.setValueAtTime(0.0001, t);
+      g.gain.exponentialRampToValueAtTime(0.16, t + 0.012);
+      g.gain.exponentialRampToValueAtTime(0.0001, t + 0.14);
+      o.connect(g).connect(actx.destination);
+      o.start(t); o.stop(t + 0.16);
+    } catch (e) {}
+  }
+  document.addEventListener("DOMContentLoaded", function () {
+    var a = document.querySelector("#menu .nav-cta");
+    if (!a) return;
+    a.addEventListener("click", function (e) {
+      if (e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+      if (a.target === "_blank") { click(); return; }
+      e.preventDefault();
+      click();
+      var href = a.href;
+      setTimeout(function () { window.location.href = href; }, 130);
+    });
+  });
+})();
+</script>
 {{- /* Head custom content area end */ -}}
