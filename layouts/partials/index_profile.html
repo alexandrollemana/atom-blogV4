@@ -57,10 +57,12 @@
           (dict "name" "Thales"    "file" "thales.png")
           (dict "name" "Accor"     "file" "accor.png")
         }}
+        {{- $featured := first 4 $companies }}
+        {{- $rest := after 4 $companies }}
         <section class="companies-strip">
           <h2 class="companies-title">Companies I've Hacked</h2>
-          <div class="companies-logos">
-            {{- range $i, $c := $companies }}
+          <div class="companies-logos companies-featured">
+            {{- range $i, $c := $featured }}
             {{- $res := resources.Get (printf "images/companies/%s" $c.file) }}
             {{- $src := "" }}
             {{- if eq $res.MediaType.SubType "svg" }}
@@ -69,6 +71,18 @@
               {{- $src = printf "data:image/webp;base64,%s" (($res.Resize "260x webp q90").Content | base64Encode) }}
             {{- end }}
             <img class="company-logo" src="{{ $src | safeURL }}" alt="{{ $c.name }}" width="130" height="40" decoding="sync" loading="eager" style="--d:{{ mul $i 0.08 }}s">
+            {{- end }}
+          </div>
+          <div class="companies-logos">
+            {{- range $i, $c := $rest }}
+            {{- $res := resources.Get (printf "images/companies/%s" $c.file) }}
+            {{- $src := "" }}
+            {{- if eq $res.MediaType.SubType "svg" }}
+              {{- $src = printf "data:image/svg+xml;base64,%s" ($res.Content | base64Encode) }}
+            {{- else }}
+              {{- $src = printf "data:image/webp;base64,%s" (($res.Resize "260x webp q90").Content | base64Encode) }}
+            {{- end }}
+            <img class="company-logo" src="{{ $src | safeURL }}" alt="{{ $c.name }}" width="130" height="40" decoding="sync" loading="eager" style="--d:{{ mul (add $i 4) 0.08 }}s">
             {{- end }}
           </div>
         </section>
@@ -98,6 +112,12 @@
   align-items: center;
   gap: 1rem 1.6rem;
 }
+/* Featured row: the 4 highlighted logos, kept on a single line */
+.companies-featured {
+  flex-wrap: nowrap;
+  gap: 2.4rem;
+  margin-bottom: 2.2rem;
+}
 /* Override PaperMod's .profile img { border-radius: 50% } */
 .profile_inner .company-logo {
   --s: 1;            /* per-logo size (compensates padding + featured sizing) */
@@ -113,7 +133,7 @@
   --tint: brightness(0) invert(1);
   transform: scale(var(--s)) translateY(var(--ty));
   transition: transform 0.18s ease;
-  animation: logoShine 8s ease-in-out var(--d) infinite;
+  animation: logoShine 4s ease-in-out var(--d) infinite;
 }
 body:not(.dark) .profile_inner .company-logo {
   --tint: brightness(0);
@@ -123,14 +143,10 @@ body:not(.dark) .profile_inner .company-logo {
 
 /* Featured (first row) — clearly larger than the rest.
    Wider box reserves horizontal room so the scaled-up logos don't collide. */
-.profile_inner .company-logo[alt="Google"],
-.profile_inner .company-logo[alt="Android"],
-.profile_inner .company-logo[alt="Anthropic"],
-.profile_inner .company-logo[alt="AWS"] { width: 175px; }
-.profile_inner .company-logo[alt="Google"]           { --s: 2.1; }
-.profile_inner .company-logo[alt="Android"]          { --s: 1.75; }
-.profile_inner .company-logo[alt="Anthropic"]        { --s: 1.55; }
-.profile_inner .company-logo[alt="AWS"]              { --s: 1.55; }
+.profile_inner .company-logo[alt="Google"]           { --s: 1.7; }
+.profile_inner .company-logo[alt="Android"]          { --s: 1.4; }
+.profile_inner .company-logo[alt="Anthropic"]        { --s: 1.25; }
+.profile_inner .company-logo[alt="AWS"]              { --s: 1.25; }
 .profile_inner .company-logo[alt="Banque Populaire"] { --s: 1.15; }
 /* Padding compensation for the rest */
 .profile_inner .company-logo[alt="Accor"]            { --s: 1.35; }
@@ -139,8 +155,8 @@ body:not(.dark) .profile_inner .company-logo {
 
 /* Subtle shine sweeping across the row — the page's only animation */
 @keyframes logoShine {
-  0%, 90%, 100% { opacity: 0.68; filter: var(--tint) drop-shadow(0 0 0 transparent); }
-  95%           { opacity: 1;    filter: var(--tint) drop-shadow(0 0 6px var(--glow)); }
+  0%, 55%, 100% { opacity: 0.68; filter: var(--tint) drop-shadow(0 0 0 transparent); }
+  77%           { opacity: 1;    filter: var(--tint) drop-shadow(0 0 6px var(--glow)); }
 }
 @media (prefers-reduced-motion: reduce) {
   .profile_inner .company-logo { animation: none; opacity: 0.7; filter: var(--tint); }
