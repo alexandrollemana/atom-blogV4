@@ -1,5 +1,5 @@
 ---
-title: "How I Gamified My Life as a Full-Time Bug Bounty Hunter"
+title: "How I Systematized My Life as a Full-Time Bug Bounty Hunter"
 date: 2026-07-23T10:00:00+02:00
 slug: a-reward-adds-never-gates
 category: blog

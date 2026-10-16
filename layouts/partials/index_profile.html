@@ -49,13 +49,14 @@
           (dict "name" "Atlassian" "file" "atlassian.png")
           (dict "name" "Jira"      "file" "jira.webp")
           (dict "name" "Loom"      "file" "loom.svg")
-          (dict "name" "Atos"      "file" "atos.png")
+          (dict "name" "Adobe"     "file" "adobe.svg")
           (dict "name" "BPCE"      "file" "bpce.png")
           (dict "name" "Banque Populaire"  "file" "banquepopulaire.png")
           (dict "name" "Caisse d'Épargne"  "file" "caisseepargne.webp")
           (dict "name" "Cartier"   "file" "cartier.svg")
-          (dict "name" "Thales"    "file" "thales.png")
+          (dict "name" "PortSwigger" "file" "portswigger.svg")
           (dict "name" "Accor"     "file" "accor.png")
+          (dict "name" "Zhipu AI"  "file" "zhipu.png")
         }}
         {{- $featured := first 4 $companies }}
         {{- $rest := after 4 $companies }}
@@ -150,8 +151,10 @@ body:not(.dark) .profile_inner .company-logo {
 .profile_inner .company-logo[alt="Banque Populaire"] { --s: 1.15; }
 /* Padding compensation for the rest */
 .profile_inner .company-logo[alt="Accor"]            { --s: 1.35; }
-.profile_inner .company-logo[alt="Atos"]             { --s: 0.62; }
+.profile_inner .company-logo[alt="Adobe"]            { --s: 1.05; }
 .profile_inner .company-logo[alt="Loom"]             { --s: 0.85; }
+.profile_inner .company-logo[alt="PortSwigger"]      { --s: 1.05; }
+.profile_inner .company-logo[alt="Zhipu AI"]         { --s: 0.70; }
 
 /* Subtle shine sweeping across the row — the page's only animation */
 @keyframes logoShine {

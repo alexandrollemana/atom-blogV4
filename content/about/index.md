@@ -1,5 +1,5 @@
 ---
-title: "Full time Bug Bounty Hunter on Google"
+title: "Full time Bug Bounty Hunter"
 slug: about
 category:
 summary:

@@ -32,7 +32,7 @@ server:
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
   title: Atom Blog 
-  description: "Blog of a Full-time Bug Bounty Hunter on Google"
+  description: "Blog of a Full-time Bug Bounty Hunter"
   keywords: [Blog, Portfolio, Hacker, Cybersecurity, BSCP, Port Swigger]
   author: Atom 
   # author: ["Me", "You"] # multiple authors
@@ -69,8 +69,8 @@ params:
   profileMode:
     enabled: true # needs to be explicitly set
     title: "Atom"
-    subtitle: "**Full-time bug bounty hunter**<br>I share my journey, my findings, and what I learn along the way."
-    imageUrl: "images/atom-profile.png"
+    subtitle: "**Full-time Bug Bounty Hunter**<br>I share my journey, my findings, and what I learn along the way."
+    imageUrl: "images/main.png"
     imageWidth: 160
     imageHeight: 160
     imageTitle: "Atom"
